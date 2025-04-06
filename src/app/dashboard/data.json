@@ -1,0 +1,133 @@
+[
+  {
+    "_id": "67e7f5583c1d0232e100a41e",
+    "name": "Gaming & Betting",
+    "description": "Trusted reviews on the latest gaming, casinos, esports and betting sites.",
+    "tags": [
+      "Online Games",
+      " Console Games",
+      "Betting Platforms",
+      " Gaming Accessories",
+      " VR and AR Gaming",
+      " Esports Platforms And Teams"
+    ],
+    "iconUrl": "/uploads/1743323565012-icon.png",
+    "isActive": true,
+    "isDeleted": false,
+    "createdAt": "2025-03-29T13:27:52.367Z",
+    "updatedAt": "2025-03-30T08:32:45.014Z",
+    "__v": 0
+  },
+  {
+    "_id": "67e7f5eb3c1d0232e100a421",
+    "name": "E-commerce",
+    "description": "The best online stores, product, reviews & online shopping experience",
+    "tags": [
+      "Product Reviews",
+      " Online Shopping Reviews",
+      " Best \r\nonline Stores",
+      " Fashion & Apparel",
+      " Electronics",
+      " Groceries"
+    ],
+    "iconUrl": "/uploads/1743323695712-icon.png",
+    "isActive": true,
+    "isDeleted": false,
+    "createdAt": "2025-03-29T13:30:19.329Z",
+    "updatedAt": "2025-03-30T08:34:55.713Z",
+    "__v": 0
+  },
+  {
+    "_id": "67e7f8f13c1d0232e100a43e",
+    "name": "Travel & Tourism",
+    "description": "Trusted travel reviews for airlines, hotels, and tourism agencies",
+    "tags": [
+      "Travel Reviews",
+      " Hot Reviews",
+      " Airline Reviews",
+      " Car Rentals",
+      " Travel Agencies",
+      " Local Guides and Experiences"
+    ],
+    "iconUrl": "/uploads/1743323767356-icon.png",
+    "isActive": true,
+    "isDeleted": false,
+    "createdAt": "2025-03-29T13:43:13.408Z",
+    "updatedAt": "2025-03-30T08:36:07.357Z",
+    "__v": 0
+  },
+  {
+    "_id": "67e7f95f3c1d0232e100a441",
+    "name": "Finance & Insurance",
+    "description": "Customer reviews on financial services providing platforms",
+    "tags": [
+      "Bank Reviews",
+      " Credit Card Reviews",
+      " Investment Platforms",
+      " Insurance Reviews",
+      " Forex and Money Transfers"
+    ],
+    "iconUrl": "/uploads/1743324082835-icon.png",
+    "isActive": true,
+    "isDeleted": false,
+    "createdAt": "2025-03-29T13:45:03.087Z",
+    "updatedAt": "2025-03-30T08:41:22.836Z",
+    "__v": 0
+  },
+  {
+    "_id": "67e7f9c83c1d0232e100a444",
+    "name": "Health & Wellness",
+    "description": "Browse doctor reviews, hospitals, and health product feedback.",
+    "tags": [
+      "Doctor Reviews",
+      " Hospital Reviews",
+      " Health Product Reviews",
+      " Online Pharmacies",
+      " Mental Health Counselling"
+    ],
+    "iconUrl": "/uploads/1743324054562-icon.png",
+    "isActive": true,
+    "isDeleted": false,
+    "createdAt": "2025-03-29T13:46:48.210Z",
+    "updatedAt": "2025-03-30T08:40:54.564Z",
+    "__v": 0
+  },
+  {
+    "_id": "67e7fa333c1d0232e100a447",
+    "name": "Technology & Saas",
+    "description": "Discover software reviews, app reviews, and cloud services",
+    "tags": [
+      "Software Reviews",
+      " App Reviews",
+      " Web Hosting Reviews",
+      " Saas Platforms",
+      " IT Support Services",
+      " "
+    ],
+    "iconUrl": "/uploads/1743324169324-icon.png",
+    "isActive": true,
+    "isDeleted": false,
+    "createdAt": "2025-03-29T13:48:35.406Z",
+    "updatedAt": "2025-03-30T08:42:49.328Z",
+    "__v": 0
+  },
+  {
+    "_id": "67e802f83c1d0232e100a44c",
+    "name": "Technology & Saas1",
+    "description": "Discover software reviews, app reviews, and cloud services",
+    "tags": [
+      "Software Reviews",
+      " App Reviews",
+      " Web Hosting Reviews",
+      " Saas Platforms",
+      " IT Support Services",
+      " "
+    ],
+    "iconUrl": "/uploads/1743324193991-icon.png",
+    "isActive": false,
+    "isDeleted": false,
+    "createdAt": "2025-03-29T14:26:00.134Z",
+    "updatedAt": "2025-03-30T08:43:13.992Z",
+    "__v": 0
+  }
+]
