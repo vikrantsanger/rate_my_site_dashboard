@@ -47,8 +47,8 @@ import {
   getSortedRowModel,
   useReactTable,
 } from '@tanstack/react-table';
-import { toast } from 'sonner';
-import { string, z } from 'zod';
+// import { toast } from 'sonner';
+import { z } from 'zod';
 import { Switch } from '@/components/ui/switch';
 
 import { useIsMobile } from '@/hooks/use-mobile';
@@ -122,6 +122,32 @@ function DragHandle({ id }: { id: string }) {
     </Button>
   );
 }
+
+const EditableCell = ({ row }: { row: Row<z.infer<typeof schema>> }) => {
+  const [active, setActive] = React.useState(row.original.isActive);
+
+  const handleToggle = () => {
+    const newStatus = !active;
+    setActive(newStatus);
+
+    // 🔁 Optional: Trigger API update here
+    console.log('Toggled status for:', row.original._id, '→', newStatus);
+  };
+
+  return (
+    <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1 text-sm text-muted-foreground">
+        {active ? (
+          <IconCircleCheckFilled className="h-4 w-4 fill-green-500 dark:fill-green-400" />
+        ) : (
+          <IconLoader className="h-4 w-4 text-red-500 fill-red-500 dark:fill-red-400" />
+        )}
+        {active ? 'Active' : 'Inactive'}
+      </div>
+      <Switch checked={active} onCheckedChange={handleToggle} />
+    </div>
+  );
+};
 
 const columns: ColumnDef<z.infer<typeof schema>>[] = [
   {
@@ -216,31 +242,7 @@ const columns: ColumnDef<z.infer<typeof schema>>[] = [
   {
     accessorKey: 'isActive',
     header: 'Status',
-    cell: ({ row }) => {
-      const [active, setActive] = React.useState(row.original.isActive);
-
-      const handleToggle = () => {
-        const newStatus = !active;
-        setActive(newStatus);
-
-        // 🔁 Optional: Trigger API update here
-        console.log('Toggled status for:', row.original._id, '→', newStatus);
-      };
-
-      return (
-        <div className="flex items-center gap-2">
-          <div className="flex items-center gap-1 text-sm text-muted-foreground">
-            {active ? (
-              <IconCircleCheckFilled className="h-4 w-4 fill-green-500 dark:fill-green-400" />
-            ) : (
-              <IconLoader className="h-4 w-4 fill-red-500 dark:fill-red-400" />
-            )}
-            {active ? 'Active' : 'Inactive'}
-          </div>
-          <Switch checked={active} onCheckedChange={handleToggle} />
-        </div>
-      );
-    },
+    cell: ({ row }) => <EditableCell row={row} />,
   },
   {
     accessorKey: 'createdAt',
